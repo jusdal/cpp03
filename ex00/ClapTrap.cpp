@@ -6,7 +6,7 @@
 /*   By: jdaly <jdaly@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/27 20:31:34 by jdaly             #+#    #+#             */
-/*   Updated: 2023/11/27 21:34:04 by jdaly            ###   ########.fr       */
+/*   Updated: 2023/11/29 15:26:28 by jdaly            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,17 @@
 
 ClapTrap::ClapTrap(std::string name) : _name(name), _hitPoints(10), _energyPoints(10), _attackDamage(0)
 {
-    std::cout << "Constructor called." << std::endl;
+    std::cout << "ClapTrap constructor called." << std::endl;
 }
 
 ClapTrap::~ClapTrap()
 {
-    std::cout << "Destructor called." << std::endl;
+    std::cout << "ClapTrap destructor called." << std::endl;
 }
 
 ClapTrap::ClapTrap(ClapTrap const& other)
 {
-    std::cout << "Copy constructor called" << std::endl;
+    std::cout << "ClapTrap copy constructor called" << std::endl;
     _name = other._name;
     _hitPoints = other._hitPoints;
     _energyPoints = other._energyPoints;
