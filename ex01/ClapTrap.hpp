@@ -6,7 +6,7 @@
 /*   By: jdaly <jdaly@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/27 20:31:26 by jdaly             #+#    #+#             */
-/*   Updated: 2023/11/29 16:05:40 by jdaly            ###   ########.fr       */
+/*   Updated: 2023/11/29 21:20:01 by jdaly            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define CLAPTRAP_HPP
 
 # include <iostream>
+# include <string>
 
 class ClapTrap
 {
@@ -23,9 +24,8 @@ protected:
     int             _energyPoints;
     int             _attackDamage;
 
-    ClapTrap();
-
 public:
+    ClapTrap();
 	ClapTrap(std::string name);                //constructor
     ClapTrap(ClapTrap const& other);           //copy constructor
 	~ClapTrap();                               //destructor
