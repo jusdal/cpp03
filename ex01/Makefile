@@ -6,11 +6,11 @@
 #    By: jdaly <jdaly@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/27 20:30:56 by jdaly             #+#    #+#              #
-#    Updated: 2023/11/29 16:28:18 by jdaly            ###   ########.fr        #
+#    Updated: 2023/11/29 21:42:56 by jdaly            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = claptrap
+NAME = scavtrap
 
 CC = c++
 CPPFLAGS = -Wall -Wextra -Werror -std=c++98
