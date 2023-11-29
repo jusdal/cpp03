@@ -6,7 +6,7 @@
 /*   By: jdaly <jdaly@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/27 20:31:26 by jdaly             #+#    #+#             */
-/*   Updated: 2023/11/27 21:26:45 by jdaly            ###   ########.fr       */
+/*   Updated: 2023/11/29 15:56:42 by jdaly            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ private:
     int             _hitPoints;
     int             _energyPoints;
     int             _attackDamage;
+
+    ClapTrap();
 
 public:
 	ClapTrap(std::string name);                //constructor
