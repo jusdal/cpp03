@@ -6,7 +6,7 @@
 /*   By: jdaly <jdaly@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/29 15:29:45 by jdaly             #+#    #+#             */
-/*   Updated: 2023/11/29 16:35:40 by jdaly            ###   ########.fr       */
+/*   Updated: 2023/11/29 20:13:41 by jdaly            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,10 @@ private:
 
 public:
 	ScavTrap(std::string name);                //constructor
-    //ScavTrap(ScavTrap const& other);           //copy constructor
+    ScavTrap(ScavTrap const& other);           //copy constructor
 	~ScavTrap();                               //destructor
 
-    //ScavTrap& operator=(ScavTrap const& rhs);   //copy assignment operator overload
+    ScavTrap& operator=(ScavTrap const& rhs);   //copy assignment operator overload
     
     void    attack(const std::string& target);
 	void    guardGate();
