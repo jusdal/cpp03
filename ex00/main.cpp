@@ -6,7 +6,7 @@
 /*   By: justindaly <justindaly@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/27 20:31:12 by jdaly             #+#    #+#             */
-/*   Updated: 2023/11/30 14:55:37 by justindaly       ###   ########.fr       */
+/*   Updated: 2023/11/30 15:00:28 by justindaly       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@ int main(void)
     ClapTrap    claptrap3(claptrap2);
     ClapTrap    claptrap4("Robot");
 
-    claptrap1.attack("Victim");		//loses attackDamage (0) number of hitPoints
-    claptrap2.takeDamage(20);		//loses 20 hitPoints (goes to 0)
-    claptrap2.beRepaired(10); 		//not able to repair becuase no hitPoints
+    claptrap1.attack("Victim");		//victim loses 1 hit point/attacker loses 1 energy point
+    claptrap2.takeDamage(20);		//victim loses 20 hitPoints (goes to 0)
+    claptrap2.beRepaired(10); 		//victim not able to repair becuase no hitPoints
 
     claptrap2.attack("Robot");		//not enough hitPoints to attack
     claptrap4.takeDamage(5); 		//loses 5 hitPoints (goes to 5)
