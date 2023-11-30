@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jdaly <jdaly@student.42.fr>                +#+  +:+       +#+        */
+/*   By: justindaly <justindaly@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/27 20:31:12 by jdaly             #+#    #+#             */
-/*   Updated: 2023/11/29 20:09:03 by jdaly            ###   ########.fr       */
+/*   Updated: 2023/11/30 14:55:37 by justindaly       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,15 +19,15 @@ int main(void)
     ClapTrap    claptrap3(claptrap2);
     ClapTrap    claptrap4("Robot");
 
-    claptrap1.attack("Victim");
-    claptrap2.takeDamage(20);
-    claptrap2.beRepaired(10);
+    claptrap1.attack("Victim");		//loses attackDamage (0) number of hitPoints
+    claptrap2.takeDamage(20);		//loses 20 hitPoints (goes to 0)
+    claptrap2.beRepaired(10); 		//not able to repair becuase no hitPoints
 
-    claptrap2.attack("Robot");
-    claptrap4.takeDamage(5);
-    claptrap4.beRepaired(400);
-    claptrap4.takeDamage(1000);
-    claptrap4.beRepaired(1000);
+    claptrap2.attack("Robot");		//not enough hitPoints to attack
+    claptrap4.takeDamage(5); 		//loses 5 hitPoints (goes to 5)
+    claptrap4.beRepaired(400);		//hitPoints go to max (10)
+    claptrap4.takeDamage(1000);		//hitPoints go to 0
+    claptrap4.beRepaired(1000); 	//not able to repair itself because no hitPoints
     
     return (0);
 }
